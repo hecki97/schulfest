@@ -1,0 +1,24 @@
+{
+	"global": {
+		"mysql.datenbank.error": "Datenbank konnte nicht ausgewählt werden",
+		"mysql.verbindung.error": "Verbindung zur Datenbank konnte nicht hergestellt werden"
+	},
+	"eintragen": {
+		"registrierung": "Eintragen:",
+		"daten": "Informationen eingeben:",
+		"link": "Link:",
+		"alert.succes": "Der Link ",
+		"alert.succes.2": " wurde eingetragen",
+		"javascript.alert.felder": "Eingabefehler. Bitte alle Felder korrekt ausfüllen.",
+		"javascript.alert.speicherfehler": "Fehler beim Speichern. Bitte erneut versuchen!",
+		"javascript.alert.bereits.vorhanden": "Link bereits vorhanden. Bitte überprüfen!"
+	}, 
+	"info": {
+		"title": "About",
+		"source.code": "Source Code(Github)",
+		"website": "MLK-Website: ",
+		"powered.by": "Powered by: ",
+		"(c)": "© 2014 - hecki97",
+		"version": "Version: "
+	}
+}
