@@ -67,26 +67,38 @@
 
         <?php if($menge == 0) : ?> 
         <ul>
-          <?php $eintrag = "INSERT INTO `bilder`(`link`) VALUES ('$link')"; ?>
-          <?php $eintragen = mysql_query($eintrag); ?>
+          <?php $loadImage = @fopen("https://dl.dropboxusercontent.com/u/107727443/Schulfest%202014/$link", "r"); ?>
+            <?php if ($loadImage != null) : ?>
+            <ul>
+              <?php $eintrag = "INSERT INTO `bilder`(`link`) VALUES ('$link')"; ?>
+              <?php $eintragen = mysql_query($eintrag); ?>
 
-          <?php if($eintragen == true) : ?>
-          <ul>
-            <h3><?php echo $string['eintragen']['alert.succes']; ?><i><u><?php echo $link; ?></u></i><?php echo $string['eintragen']['alert.succes.2']; ?></h3>
+              <?php if($eintragen == true) : ?>
+              <ul>
+                <h3><?php echo $string['eintragen']['alert.succes']; ?><i><u><?php echo $link; ?></u></i><?php echo $string['eintragen']['alert.succes.2']; ?></h3>
+              </ul>
+              <?php else : ?> 
+              <ul>
+                <script type="text/javascript">alert("<?php echo $string['eintragen']['javascript.alert.speicherfehler']; ?>");</script>
+                <?php exit; ?>
+              </ul>
+              <?php endif; ?>
+            </ul>
+            <?php else : ?>
+            <ul>
+              <script type="text/javascript">alert("<?php echo $string['eintragen']['javascript.alert.not.found']; ?>");</script>
+              <?php exit; ?>
+            </ul>
+            <?php endif; ?>
           </ul>
           <?php else : ?> 
           <ul>
-            <script type="text/javascript">alert("<?php echo $string['eintragen']['javascript.alert.speicherfehler']; ?>");</script>
+            <script type="text/javascript">alert("<?php echo $string['eintragen']['javascript.alert.bereits.vorhanden']; ?>");</script>
+            <?php exit; ?>
           </ul>
           <?php endif; ?>
         </ul>
-        <?php else : ?> 
-          <ul>
-            <script type="text/javascript">alert("<?php echo $string['eintragen']['javascript.alert.bereits.vorhanden']; ?>");</script>
-          </ul>
         <?php endif; ?>
-      </ul>
-      <?php endif; ?>
       </form>
     </body>
 </html>

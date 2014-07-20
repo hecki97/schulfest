@@ -19,7 +19,8 @@
 		"alert.succes.2": " wurde eingetragen",
 		"javascript.alert.felder": "Eingabefehler. Bitte alle Felder korrekt ausfüllen.",
 		"javascript.alert.speicherfehler": "Fehler beim Speichern. Bitte erneut versuchen!",
-		"javascript.alert.bereits.vorhanden": "Link bereits vorhanden. Bitte überprüfen!"
+		"javascript.alert.bereits.vorhanden": "Link bereits vorhanden. Bitte überprüfen!",
+		"javascript.alert.not.found": "Der eingegebene Link wurde auf dem Server nicht gefunden. Bitte Eingaben überprüfen!"
 	}, 
 	"info": {
 		"title": "About",
