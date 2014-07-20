@@ -4,9 +4,9 @@
 <?php include("$root/schulfest/res/html/htmlHead.html"); ?>
 <?php include("$root/schulfest/res/php/_loadLangFiles.php"); ?>
 <?php include("$root/schulfest/res/php/_getVersionScript.php"); ?>
-<?php @$verbindung = mysql_connect("localhost", "testLogin" , "") or die($string['global']['mysql.verbindung.error']); ?>
-<?php @mysql_select_db("test", $verbindung) or die ($string['global']['mysql.datenbank.error']); ?>
-<?php $abfrage = "SELECT * FROM `schulfest` WHERE 1"; ?>
+<?php @$verbindung = mysql_connect("localhost", "schulfestLogin" , "") or die($string['global']['mysql.connect.error']); ?>
+<?php @mysql_select_db("schulfest", $verbindung) or die ($string['global']['mysql.select.db.error']); ?>
+<?php $abfrage = "SELECT * FROM `bilder` WHERE 1"; ?>
 <?php $sql = mysql_query($abfrage); ?>
 <?php $anzahl = mysql_num_rows($sql); ?>
 <html xmlns="http://www.w3.org/1999/xhtml">

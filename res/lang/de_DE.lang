@@ -1,7 +1,15 @@
 {
 	"global": {
-		"mysql.datenbank.error": "Datenbank konnte nicht ausgewählt werden",
-		"mysql.verbindung.error": "Verbindung zur Datenbank konnte nicht hergestellt werden"
+		"mysql.connect.error": "Verbindung zur Datenbank konnte nicht hergestellt werden",
+		"mysql.select.db.error": "Datenbank konnte nicht ausgewählt werden",
+		"javascript.alert.login.failed": "Bitte Benutzername und/oder Passwort überprüfen!",
+		"javascript.alert.felder": "Bitte alle Felder ausfüllen!"
+	},
+	"login": {
+		"ueberschrift": "Login Informationen eingeben:",
+		"username": "Benutzername:",
+		"password": "Passwort:",
+		"button.submit.anmelden": "Anmelden!"
 	},
 	"eintragen": {
 		"registrierung": "Eintragen:",
@@ -20,5 +28,10 @@
 		"powered.by": "Powered by: ",
 		"(c)": "© 2014 - hecki97",
 		"version": "Version: "
+	},
+	"authfailed": {
+		"auth.failed": "Sie besitzen derzeit keine Rechte auf diese Seite zuzugreifen!",
+		"please.relogin": "Bitte loggen Sie sich erneut ein!",
+		"button.submit.login": "Zum Login!"
 	}
 }

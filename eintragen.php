@@ -1,9 +1,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <?php $root = realpath($_SERVER["DOCUMENT_ROOT"]); ?>
 <?php $host = $_SERVER['SERVER_NAME']; ?>
-<?php @$verbindung = mysql_connect("localhost", "testLogin" , "") or die($string['global']['mysql.verbindung.error']); ?>
-<?php @mysql_select_db("test", $verbindung) or die ($string['global']['mysql.datenbank.error']); ?>
+<?php @$verbindung = mysql_connect("localhost", "schulfestLogin" , "") or die($string['global']['mysql.connect.error']); ?>
+<?php @mysql_select_db("schulfest", $verbindung) or die ($string['global']['mysql.select.db.error']); ?>
 <?php include("$root/schulfest/res/html/htmlHead.html"); ?>
+<?php include("$root/schulfest/res/php/_auth.php"); ?>
 <?php include("$root/schulfest/res/php/_loadLangFiles.php"); ?>
 <?php include("$root/schulfest/res/php/_getVersionScript.php"); ?>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -19,7 +20,7 @@
     <header>
       <nav class="navigation-bar dark fixed-top">
         <nav class="navigation-bar-content">
-            <a href="http://<?php echo $host;?>/schulfest/index.php" class="element"><span class="icon-arrow-left-5"></span> Index</a>
+            <a href="http://<?php echo $host;?>/schulfest/res/php/_logout.php" class="element"><span class="icon-arrow-left-5"></span> Logout</a>
      
             <span class="element-divider"></span>
             <button class="element brand no-phone no-tablet" onclick="window.location.reload();"><span class="icon-spin"></span></button>
@@ -61,12 +62,12 @@
         </ul>
         <?php endif; ?> 
 
-        <?php $result = mysql_query("SELECT `link` FROM `schulfest` WHERE `link` LIKE '$link'"); ?>
+        <?php $result = mysql_query("SELECT `link` FROM `bilder` WHERE `link` LIKE '$link'"); ?>
         <?php $menge = mysql_num_rows($result); ?>
 
         <?php if($menge == 0) : ?> 
         <ul>
-          <?php $eintrag = "INSERT INTO `schulfest`(`link`) VALUES ('$link')"; ?>
+          <?php $eintrag = "INSERT INTO `bilder`(`link`) VALUES ('$link')"; ?>
           <?php $eintragen = mysql_query($eintrag); ?>
 
           <?php if($eintragen == true) : ?>
