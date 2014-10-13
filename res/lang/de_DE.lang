@@ -1,38 +1,36 @@
 {
-	"global": {
-		"mysql.connect.error": "Verbindung zur Datenbank konnte nicht hergestellt werden",
-		"mysql.select.db.error": "Datenbank konnte nicht ausgewählt werden",
-		"javascript.alert.login.failed": "Bitte Benutzername und/oder Passwort überprüfen!",
-		"javascript.alert.felder": "Bitte alle Felder ausfüllen!"
+	"javascript.alerts": {
+		"j.login.failed": "Bitte Benutzername und/oder Passwort überprüfen!",
+		"j.fields": "Bitte alle Felder ausfüllen!",
+		"j.error": "Fehler beim Speichern. Bitte erneut versuchen!",
+		"j.already.exists": "Link bereits vorhanden. Bitte überprüfen!",
+		"j.not.found": "Der eingegebene Link wurde auf dem Server nicht gefunden. Bitte Eingaben überprüfen!",
+		"j.logout": "Wollen Sie sich wirklich ausloggen?"
 	},
-	"login": {
-		"ueberschrift": "Login Informationen eingeben:",
-		"username": "Benutzername:",
-		"password": "Passwort:",
-		"button.submit.anmelden": "Anmelden!"
+	"buttons": {
+		"b.login": "Anmelden!",
+		"b.enter": "Eintragen!"
 	},
-	"eintragen": {
-		"registrierung": "Eintragen:",
-		"daten": "Informationen eingeben:",
-		"link": "Link:",
-		"alert.succes": "Der Link ",
-		"alert.succes.2": " wurde eingetragen",
-		"javascript.alert.felder": "Eingabefehler. Bitte alle Felder korrekt ausfüllen.",
-		"javascript.alert.speicherfehler": "Fehler beim Speichern. Bitte erneut versuchen!",
-		"javascript.alert.bereits.vorhanden": "Link bereits vorhanden. Bitte überprüfen!",
-		"javascript.alert.not.found": "Der eingegebene Link wurde auf dem Server nicht gefunden. Bitte Eingaben überprüfen!"
-	}, 
-	"info": {
-		"title": "About",
-		"source.code": "Source Code(Github)",
-		"website": "MLK-Website: ",
-		"powered.by": "Powered by: ",
-		"(c)": "© 2014 - hecki97",
-		"version": "Version: "
+	"links": {
+		"a.schulfest": "Schulfest' 14"
 	},
-	"authfailed": {
-		"auth.failed": "Sie besitzen derzeit keine Rechte auf diese Seite zuzugreifen!",
-		"please.relogin": "Bitte loggen Sie sich erneut ein!",
-		"button.submit.login": "Zum Login!"
+	"labels": {
+		"l.username": "Benutzername:",
+		"l.password": "Passwort:",
+		"l.login": "Geschützter Bereich:",
+		"l.enter": "Link eintragen:",
+		"l.link": "Link:",
+		"l.enter.succes": "Der Link ",
+		"l.enter.succes.2": " wurde erfolgreich eingetragen!",
+		"l.info": "Info:",
+		"l.source.code": "Source Code(Github)",
+		"l.website": "MLK-Website: ",
+		"l.powered.by": "Powered by: ",
+		"l.c": "© 2014 - hecki97",
+		"l.version": "Version: "
+	},
+	"mysql": {
+		"m.connect.error": "Verbindung zur Datenbank konnte nicht hergestellt werden",
+		"m.select.db.error": "Datenbank konnte nicht ausgewählt werden"
 	}
 }

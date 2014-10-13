@@ -1,0 +1,36 @@
+{
+	"javascript.alerts": {
+		"j.login.failed": "Please check username and/or password!",
+		"j.fields": "Please fill all the fields!",
+		"j.error": "Error while saving! Please try again", 
+		"j.already.exists": "link already exists!",
+		"j.not.found": "The specified link was not found on the server! Please check entries!",
+		"j.logout": "Do you really want to logout?"
+	},
+	"buttons": {
+		"b.login": "Log in!",
+		"b.enter": "Enter!" 
+	},
+	"links": {
+		"a.schulfest": "Schulfest' 14"
+	},
+	"labels": {
+		"l.username": "Username:", 
+		"l.password": "Password:", 
+		"l.login": "Restricted Area", 
+		"l.enter": "Add a link:",
+		"l.link": "Link:", 
+		"l.enter.succes": "The Link",
+		"l.enter.succes.2": "was successfully entered!",
+		"l.info": "Info:", 
+		"l.source.code": "Source Code (Github)",
+		"l.website": "MLK website:",
+		"l.powered.by": "Powered by", 
+		"l.c": "© 2014 - hecki97",
+		"l.version": "Version:" 
+	},
+	"mysql": {
+		"m.connect.error": "connection to the database could not be established",
+		"m.select.db.error": "Database could not be selected"
+	}
+}
